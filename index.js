@@ -5,8 +5,8 @@ const program = require('commander')
 const ora = require('ora')
 const fs = require('fs')
 const chalk = require('chalk')
-const { checkUselessImage, deleteFiles, AllFiles } = require('./lib/wx_tools')
 const table = require('painting-table')
+const { checkUselessImage, deleteFiles, AllFiles } = require('./lib/wx_tools')
 
 program
     .version('0.0.1')
@@ -15,7 +15,7 @@ program
 program
     .command('image_check')
     .alias('image')
-    .option('-d, --delete', '是否删除查找出来的图片(谨慎使用)')
+    .option('-d, --delete', '删除查找出来的图片(谨慎使用)')
     .option('-s, --sort', '按文件大小进行排序')
     .description('查找没有使用过的图片')
     .action(function(options) {
