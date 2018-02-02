@@ -15,8 +15,8 @@ program
 program
     .command('image_check')
     .alias('image')
-    .option('-d, --delete', '删除查找出来的图片(谨慎使用)')
-    .option('-s, --sort', '按文件大小进行排序')
+    .option('-D, --delete', '删除查找出来的图片(谨慎使用)')
+    .option('-S, --sort', '按文件大小进行排序')
     .description('查找没有使用过的图片')
     .action(function(options) {
         const spinner = ora('checking...')
@@ -45,7 +45,7 @@ program
 
 program
     .command('check')
-    .option('-s, --size <num>', '按文件大小进行筛选(kb)')
+    .option('-S, --size <num>', '按文件大小进行筛选(kb)')
     .option('--sort', '按文件大小排序')
     .description('显示所有文件信息，除了图片')
     .action(function(options) {

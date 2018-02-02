@@ -16,7 +16,7 @@ npm install miniprogram-analyzer -g
 wma check [option]
 
 option:
-    -s, --size  按文件大小进行筛选,单位为KB
+    -S, --size  按文件大小进行筛选,单位为KB
     --sort      按文件大小排序(降序)
 ```
 ![check](./images/check.jpg)
@@ -28,8 +28,8 @@ option:
 wma image_check|image [option]
 
 option:
-    -s, --sort      按文件大小进行排序(降序)
-    -d, --delete    查找图片并删除(谨慎使用)
+    -S, --sort      按文件大小进行排序(降序)
+    -D, --delete    查找图片并删除(谨慎使用)
 ```
 ![image](./images/image.jpg)
 
