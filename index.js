@@ -62,7 +62,7 @@ program
             spinner.stop()
             const option = {
                 excludes: [],
-                includes: { filename: true, path: true, modify_time: true },
+                includes: { filename: true, path: true, size: true },
                 rename: {}
             }
             const str = table(res, option)
