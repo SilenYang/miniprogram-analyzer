@@ -54,10 +54,6 @@ color-name@^1.1.1:
   version "1.1.3"
   resolved "http://registry.npm.taobao.org/color-name/download/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
 
-colors@^1.1.2:
-  version "1.1.2"
-  resolved "http://registry.npm.taobao.org/colors/download/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
-
 commander@^2.13.0:
   version "2.13.0"
   resolved "http://registry.npm.taobao.org/commander/download/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
@@ -105,9 +101,9 @@ ora@^1.3.0:
     cli-spinners "^1.0.0"
     log-symbols "^1.0.2"
 
-painting-table@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/painting-table/-/painting-table-0.1.1.tgz#09287652ee111cc242451e20fa57c3e652b3f718"
+painting-table@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.npmjs.org/painting-table/-/painting-table-0.2.1.tgz#eddc8ca96c0a57ad1a661f58f6f251d0435cade4"
   dependencies:
     chalk "^2.3.0"
 

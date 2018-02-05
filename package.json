@@ -18,7 +18,7 @@
         "commander": "^2.13.0",
         "imageinfo": "^1.0.4",
         "ora": "^1.3.0",
-        "painting-table": "^0.1.1"
+        "painting-table": "^0.2.1"
     },
     "repository": {
         "type": "git",

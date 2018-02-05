@@ -32,7 +32,14 @@ program
             */
             spinner.stop()
             options.delete && deleteFiles(res)
-            table(res, { filename: true, size: true, modify_time: false })
+            res.forEach(item => item.path = item.path.replace(process.cwd(), ''))
+            const option = {
+                excludes: [],
+                includes: { filename: true, size: true, modify_time: false },
+                rename: {}
+            }
+            const str = table(res, option)
+            console.log(str)
         })
     }).on('--help', function() {
         console.log()
@@ -53,7 +60,13 @@ program
         spinner.start()
         AllFiles(options.size, options.sort).then(res => {
             spinner.stop()
-            table(res, { filename: true, size: true, path: true })
+            const option = {
+                excludes: [],
+                includes: { filename: true, path: true, modify_time: true },
+                rename: {}
+            }
+            const str = table(res, option)
+            console.log(str)
         })
     }).on('--help', function() {
         console.log()
