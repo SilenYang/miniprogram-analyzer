@@ -17,7 +17,6 @@ program
   .option("-P, --path <path>", "指定检查路径，默认为当前目录")
   .description("查找没有使用过的图片")
   .action(function(options) {
-    console.log(options);
     const spinner = ora("checking...");
     spinner.start();
     checkUselessImage(options.sort, options.path).then(res => {
