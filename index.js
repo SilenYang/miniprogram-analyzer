@@ -1,6 +1,5 @@
 #! /usr/bin/env node
 
-const path = require("path");
 const program = require("commander");
 const ora = require("ora");
 const fs = require("fs");
@@ -15,10 +14,10 @@ program
   .alias("image")
   .option("-D, --delete", "删除查找出来的图片(谨慎使用)")
   .option("-S, --sort", "按文件大小进行排序")
-  .option("-P, --path", "指定检查路径，默认为当前目录")
+  .option("-P, --path <path>", "指定检查路径，默认为当前目录")
   .description("查找没有使用过的图片")
   .action(function(options) {
-    console.log(process.cwd(), options);
+    console.log(options);
     const spinner = ora("checking...");
     spinner.start();
     checkUselessImage(options.sort, options.path).then(res => {
@@ -60,7 +59,7 @@ program
   .command("check")
   .option("-S, --size <num>", "按文件大小进行筛选(kb)")
   .option("--sort", "按文件大小排序")
-  .option("-P, --path", "指定检查路径，默认为当前目录")
+  .option("-P, --path <path>", "指定检查路径，默认为当前目录")
   .description("显示所有文件信息，除了图片")
   .action(function(options) {
     const spinner = ora("checking...");
